@@ -50,7 +50,7 @@ h1 {
   font-family: 'Amatic SC', cursive;
 }
 
-#newPost {
+.newPost {
   background-color: lightblue;
 }
 
@@ -65,6 +65,15 @@ h2 {
 }
 
 #addGrowlButton {
-  width:10em; height: 9em;
+      height: 45px;
+    font-size: 18px;
+    border: 1px solid black;
+    -webkit-appearance: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 140px;
+    background-color: rgb(125, 95, 67);
+    color: white;
 
 }
+
