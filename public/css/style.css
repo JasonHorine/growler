@@ -1,8 +1,35 @@
-#bearIcon {
-  list-style-image: url('../images/growling_bear.png');
+ul {
+  display: inline-block;
+  margin-left: 100px;
 }
 
 #bulletless {
+
+  font-size: 1em;
   list-style-type: none;
+
+}
+
+#bearIcon {
+  list-style-image: url('../images/small_growling_bear.png');
+  /*list-style-type: none;*/
+  background-color: rgb(208,158,112);
+  border: 2px solid black;
+  /*height: 150px;*/
+  width: 500px;
+  font-size: 1.5em;
+  padding: 5px;
+
+}
+
+div {
+  background-color: lightblue;
+  width: 800px;
+}
+
+#delete {
+  float: right;
+  position: relative;
+  top: 10px;
 }
 

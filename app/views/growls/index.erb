@@ -1,17 +1,19 @@
+
+
 <div>
-
-<h1>Growler</h1>
-
 <form action="/new">
     <input type="submit" value="Add a Growl">
 </form>
 
 <ul>
 <% @growls.each do |growl| %>
-  <li id= "bearIcon">Author: <%= growl.author %> posted at <%=growl.timestamp %></li>
-  <li id = "bulletless"> <%= growl.post %> </li>
+  <li id= "bulletless"><%= growl.author %> posted at <%=growl.timestamp %></li>
+  <li id = "bearIcon"> <%= growl.post %> <form action ="/growls/<%= growl.id %>" method="post">
+ <input type="hidden" name="_method" value="delete">
+ <input id ="delete" type="submit" value="Delete growl">
+</form><br></li>
+
  </br>
   <% end %>
 </ul>
-
 </div>

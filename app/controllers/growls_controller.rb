@@ -2,7 +2,7 @@ class GrowlsController < ApplicationController
   set :views, Proc.new { File.join(root, "views/growls")}
 
 get '/growls' do
-  @growls = Growl.all
+  @growls = Growl.all.reverse
   erb :index
 end
 
@@ -16,6 +16,11 @@ post '/growls' do
   redirect '/growls'
 end
 
+delete '/growls/:id' do
+  growl = Growl.find(params["id"])
+  growl.destroy
+  redirect '/growls'
+end
 
 
 
