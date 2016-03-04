@@ -22,8 +22,11 @@ delete '/growls/:id' do
   redirect '/growls'
 end
 
+get '/author/:author' do
+  @author_growls = Growl.where(author: (params["author"]))
 
-
+  erb :author
+end
 
 
 
