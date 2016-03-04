@@ -14,3 +14,4 @@ ActiveRecord::Base.establish_connection(
 
 use Rack::MethodOverride
 run ApplicationController
+run GrowlsController
