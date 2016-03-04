@@ -1,0 +1,8 @@
+#bearIcon {
+  list-style-image: url('../images/growling_bear.png');
+}
+
+#bulletless {
+  list-style-type: none;
+}
+

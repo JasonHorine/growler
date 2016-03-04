@@ -1,1 +1,17 @@
+<div>
+
 <h1>Growler</h1>
+
+<form action="/new">
+    <input type="submit" value="Add a Growl">
+</form>
+
+<ul>
+<% @growls.each do |growl| %>
+  <li id= "bearIcon">Author: <%= growl.author %> posted at <%=growl.timestamp %></li>
+  <li id = "bulletless"> <%= growl.post %> </li>
+ </br>
+  <% end %>
+</ul>
+
+</div>
