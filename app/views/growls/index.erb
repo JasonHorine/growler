@@ -2,21 +2,15 @@
 
 <div id="growlZone">
 <form action="/new">
-    <input type="submit" value="Add a Growl">
-
+    <input id = "addGrowlButton" type="submit" value="Add a Growl">
 </form>
 
 <ul>
 <% @growls.each do |growl| %>
-  <li id= "bulletless"><%= growl.author %> posted at <%=growl.timestamp %></li>
+  <li id= "bulletless"><a href="/author/<%= growl.author %>"><%= growl.author %></a> posted at <%=growl.timestamp %></li>
   <li id = "bearIcon"> <%= growl.post %> <form action ="/growls/<%= growl.id %>" method="post">
  <input type="hidden" name="_method" value="delete">
  <input id ="delete" type="submit" value="Delete growl">
-</form><br></li>
-
-
-<li><form action ="/author/<%= growl.author %>" method="get">
- <input id ="get" type="submit" value="See all growls by <%= growl.author %>">
 </form><br></li>
 
  </br>

@@ -53,3 +53,18 @@ h1 {
 #newPost {
   background-color: lightblue;
 }
+
+h2 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 45px;
+}
+
+#beHeard {
+  letter-spacing: 10px;
+  margin-top: 0px;
+}
+
+#addGrowlButton {
+  width:10em; height: 9em;
+
+}
